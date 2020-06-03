@@ -1,8 +1,9 @@
  
 def mpr(x,ss,s0, lt):
-    
+    #we initialize both gross requierement array and scheduled receipts array
     gr= []
     sr= []
+    #we insert our values in both gross requierement array and scheduled receipts array
     for i in range(x):
         gr.append(int(input("insert :")))
     for i in range(x):
@@ -35,7 +36,7 @@ def mpr(x,ss,s0, lt):
         i+=1
     return [gr,sr,oh,nr,por]
 
-
+# we call our fonction using : number of days/months, security stock, first stock on hand, and LT as entries to our function
 print(mpr(8,0,100,3))
 
 
